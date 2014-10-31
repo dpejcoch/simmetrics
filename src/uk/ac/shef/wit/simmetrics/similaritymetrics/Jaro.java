@@ -182,7 +182,7 @@ public final class Jaro extends AbstractStringMetric implements Serializable {
             //set boolean for quick loop exit if found
             boolean foundIt = false;
             //compare char with range of characters to either side
-            for (int j = Math.max(0, i - distanceSep); !foundIt && j < Math.min(i + distanceSep, string2.length() - 1); j++) {
+            for (int j = Math.max(0, i - distanceSep); !foundIt && j < Math.min(i + distanceSep, string2.length()); j++) {
                 //check if found
                 if (copy.charAt(j) == _char) {
                     foundIt = true;
