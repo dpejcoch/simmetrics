@@ -170,7 +170,8 @@ public final class TestMetrics {
      * @param metricVector
      * @param args         arguments vector
      */
-    private static void testMethod(final ArrayList<AbstractStringMetric> metricVector, final String[] args) {
+    @SuppressWarnings("unused")
+	private static void testMethod(final ArrayList<AbstractStringMetric> metricVector, final String[] args) {
 
         boolean useCmdArgs = false;
         boolean testTimingComplexity = false;

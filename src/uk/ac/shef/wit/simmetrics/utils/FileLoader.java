@@ -92,7 +92,8 @@ public final class FileLoader {
 
         try {
             final FileReader fileR = new FileReader(f);
-            final BufferedReader bfr = new BufferedReader(fileR);
+            @SuppressWarnings("resource")
+			final BufferedReader bfr = new BufferedReader(fileR);
             String line;
 
             while (true) {
